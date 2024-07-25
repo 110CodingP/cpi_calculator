@@ -8,8 +8,8 @@ print("grade credits")
 print("Please write B+ as B and B as b, similarly for C+ and C")
 for line in stdin:
     # as line ends in newline
-    line.rstrip('\n') 
-    grade, credits = line.split("\\s+")
+    line.strip() 
+    grade, credits = line.split()
     credits = int(credits)
     totCredits += credits
     totGrade += mp[grade]*credits
